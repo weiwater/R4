@@ -1,0 +1,6 @@
+# R4
+The watershed simulation model, Rainfall-Runoff-Router-Rootzone (R4), is developed by Wildermuth Environmental, Inc.  The initial version of the model was developed to estimate the volume of storm water recharge in the Chino Basin that occurred in recharge basins, flood retention basins, and unlined streams.  WEI developed a daily simulation model to estimate runoff, route the runoff through the Chino Basin drainage system, calculate recharge on a daily basis, and produce reports that summarized recharge performance.  This model was initially developed in 1994 for the western portion of the Chino Basin and was expanded to the entire Chino Basin in 1996.  The model has been used in the Chino Basin to estimate the recharge performance of new basins and the recharge benefits of improved basin maintenance.    
+
+The model was then expanded to include water quality simulations and was applied to the Wasteload Allocation Investigation for the Santa Ana Watershed.    
+
+After the root zone simulation module was added, the model was successfully used to estimate areal recharge from precipitation, return flows from urban and agricultural applied water, and storm water percolation in the recharge basins and channel.  WEI has applied the model to develop groundwater models for Chino Basin, Beaumont Basin and Arlington Basin.
