@@ -1,0 +1,36 @@
+!!! ReservR3.VAR ======================================================
+
+      common /rv_var/ rvelev(MXRV,MXTB),
+     &                rvarea(MXRV,MXTB),rvstor(MXRV,MXTB),
+     &                rvout(MXRV,MXTB,4),
+     &                rvpr(MXRV,MXTB),
+     &                alimit(MXRV),slimit(MXRV,4),
+     &                evwts(MXRV,MXEV),
+     &                qin(MXLK),
+     &                percl(MXRV),storl(MXRV,0:MXPS),evapl(MXRV),
+     &                out1l(MXRV),out2l(MXRV),
+     &                cstorl(MXRV,4,0:MXPS),
+     &                npts(MXRV), lkatrv(MXRV),
+     &                rvname(MXRV),
+     &                rdlink(MXRV,2),
+     &                linkrv(MXRV,2),
+     &                krvtype(MXRV),
+     &                rainss,rainfc(7),nrvopmd,
+     &                rainff,nffday,ndaff,ffmode,ffflow(MXRV)
+      character*40 rvname
+      character*8  rdlink
+      logical      ffmode
+
+      ! kevtype() = 0 --- conservation basin
+      !           = 1 --- flood control basin
+      !           = 2 --- multi purpose basin
+      ! slimit(k,1)   --- max storage without outflow 1 (dead storeage)
+      ! slimit(k,2)   --- max storage without outflow 2 (spillway)
+      ! slimit(k,3)   --- max storage
+      ! slimit(k,4)   --- operation storage for conservation
+      ! nrvopmd   = 0 --- conservation mode
+      !           = 1 --- prestorm mode (3-6 days before ss) - no supplemental water
+      !           = 2 --- prestorm mode (1 and 2 days before ss) - empty multipurpose basins
+      !           = 3 --- significant storm mode
+      !
+

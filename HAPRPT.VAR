@@ -1,0 +1,16 @@
+!!! haprpt.VAR =============================================
+
+      common /haprpt/haname(MXHA),
+     &       haarea(MXHA),
+     &       qha(MXHA),cqha(MXHA,2),
+     &       cfixed(MXHA,2), flowconv(MXHA,2),
+     &       ptrc(MXHA,2),
+     &       flid(MXHA),flwlid(MXHA)
+
+                   ! flowconv(MXHA,2) is a conversion factor to change units
+                   ! of FLOW(iha) to that of units of x values in table
+                   ! pointed by ptrc(MXHA)
+
+      character*8  haname
+      integer      ptrc
+

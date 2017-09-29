@@ -1,0 +1,11 @@
+!!! dvprpt.VAR ========================================
+
+      common /dvprpt/ dvname(MXDV),
+     &        ddlink(MXDV,2),
+     &        dflow(MXDV,MXTB),divout(MXDV,MXTB),
+     &        lkatdv(MXDV),ndpts(MXDV),
+     &        linkdv(MXDV,2)
+
+      character*40 dvname
+      character*8  ddlink
+
