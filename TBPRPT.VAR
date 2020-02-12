@@ -1,8 +1,0 @@
-!!! tbprt.var
-
-      common /tbprpt/ chname(MXCH),
-     &       ntab(0:2,0:MXCH),
-     &       table(0:2, MXCH, MXTB, 2)
-
-      character*8 chname
-
