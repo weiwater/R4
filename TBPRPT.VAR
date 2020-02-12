@@ -1,0 +1,12 @@
+!!! tbprt.var
+
+      common /tbprpt/ chname(MXCH),
+     &       ntabf(MXCH),
+     &       fwtab(MXCH,MXTB,2),
+     &       ntabq(MXLU,2),
+     &       fqtab(MXLU,2,MXTB,2)   
+
+      character*8 chname
+
+
+c     &       ptrc(MXCH,2), flowconv(MXCH),

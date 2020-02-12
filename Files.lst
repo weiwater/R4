@@ -1,0 +1,37 @@
+
+Files included in this directory.
+
+qrfv7a20.for              Main Runoff module
+SUBRSv2.FOR               Collection of subroutines that are used by all modules
+
+qro_v6a4.for              Main Router module
+LNSetUp5q.FOR             A program to setup link/node sytem from input data
+RV_SIM2.FOR               A Reservoir simulation routine
+RDOUTP6.for               Routines to read output file specification and set up files
+
+qrz_v3s7b.for             Main Rootzone module
+
+RF_DIM_4.MAX              Maximum dimensions for Runoff and Rootzone module variables
+RO_DIM_3.MAX              Maximum dimensions for Router module variables
+
+DVPRPT.VAR                Variables defining diversions
+HAPRPT.VAR                Variables defining hydrologic subareas
+LKPRPT2.var               Variables defining stream links
+rvprpt.var                Variables defining reservoirs
+TBPRPT.VAR                Variables defining inut data tables
+OVPRPT.VAR                Varaibles defining output data
+GENPARM.VAR               General variables, like number of HSAs, links, nodes, model run options, etc.
+
+fl32_r4.bat               Fortran compile and link file using Intel Fortran Compiler, Version 7
+                          
+qrfv7a20.exe              Runoff module
+qro_v6a4.exe              Router module
+qrz_v3s7b.exe             Rootzone module
+
+qrfv7a20.obj              compiled object file
+qro_v6a4.obj              compiled object file
+qrz_v3s7b.obj             compiled object file
+SUBRSV2.obj               compiled object file
+lnsetup5q.obj             compiled object file
+rdoutp6.obj               compiled object file
+rv_sim2.obj               compiled object file

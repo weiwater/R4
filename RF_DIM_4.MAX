@@ -1,0 +1,18 @@
+! RF_DIM_4.MAX =======================================
+
+! This file defined maximum dimension for Runoff model
+
+      parameter (MXHA = 400)    !   hydrologic areaz                        500
+      parameter (MXLU = 20)     !   land use types
+      parameter (MXST = 4)      !   soil type
+      parameter (MXPR = 2)      !   precipitation stations                  500
+      parameter (MXEV = 2)      !   EV stations/ET stations
+      parameter (MXCT = 3)      !   soil-CN table, and root zones
+      parameter (MXYR = 120)    !   simulation years
+      parameter (MXTT = 10)     !   entry to flow-quality table
+      parameter (MXPG = 4000)   !   HA-LU-ST polygon                        3000
+      parameter (MXZN = 10)     !   number of CN or rain zones             
+      parameter (MXWS = 15)     !   number of water supply agencies
+      parameter (MXRW = 10)     !   number of recycled water facility for direct use
+      parameter (MXWW = 5)      !   number of dairy wash water source
+

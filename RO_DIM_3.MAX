@@ -1,0 +1,16 @@
+! RO_DIM_2.MAX - This file defines maximum dimension for Router model
+
+      parameter (MXHA = 500)          ! HAs - 300 is changed to 500 on 3/12/15
+      parameter (MXLK = 1000)         ! links and nodes
+      parameter (MXDV = 100)          ! diversions
+      parameter (MXRV = 100)          ! reservoirs
+      parameter (MXIL = 5)            ! incoming links to a node
+      parameter (MXHN = 15)           ! HA for each node
+      parameter (MXTB = 50)           ! rows for rating curve  30
+      parameter (MXEV = 3)            ! number of evaporation stations
+      parameter (MXPS = 50)           ! number of point sources     
+      parameter (MXRH = 10)           ! nubmer of reaches               
+      parameter (MXCH = 300)          ! number of tables for flow and top width for channel
+      parameter (MXPL = 100)          ! number of links or nodes to print daily or monthly data
+      parameter (MXLU = 20)
+

@@ -1,0 +1,11 @@
+!!! GenParm.VAR =======================================================
+
+      common /genparm/nhat,nhat1,nhat2,newts,
+     &                nlinks,nnodes,nres,ndiv,nch,
+     &                mopt(3,2),
+     &                nplk,npnd,nprch,nqls,
+     &                ierror,qopt,delimiter,stormw,ldebug
+
+      logical*1    ierror,qopt,stormw,ldebug
+      character*1  ch1, bl1, cstar
+

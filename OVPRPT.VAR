@@ -1,0 +1,13 @@
+!!! OVprpt.VAR ========================================
+
+      common /ovprpt/ iplk(MXPL,2),
+     &       ipnd(MXPL),
+     &       rchname(MXPL),
+     &       aflow(MXPL,0:2,1920:2120,12),                                 !0:MXPS,
+     &       archp(MXPL,0:2,1920:2120,12),                                 !0:MXPS,
+     &       ipql(MXPL),xqloss(MXPL), xqevp(MXPL),
+     &       scqloss(MXPL,2,0:MXPS),cxqloss(MXPL,2)
+
+      character*8  rchname
+
+

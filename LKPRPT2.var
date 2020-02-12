@@ -1,0 +1,44 @@
+!!! lkprpt.VAR ====================================
+
+      common /lkprpt/lkname(0:MXLK),
+     &       usn(MXLK),dsn(MXLK),convtype(MXLK),
+     &       slop(MXLK),mannn(MXLK),b(MXLK),z(MXLK),length(MXLK),
+     &       incoml(MXLK,MXIL),
+     &       dpb(MXLK),dpz(MXLK), width(MXLK),
+     &       qloss(MXLK,0:MXPS),qlout(MXLK,0:MXPS),
+     &       cqloss(MXLK,2,0:MXPS),
+     &       rxn(MXLK),                   ! reduction of TIN in the reach !vq1
+     &       cqlout(MXLK,4,0:MXPS),
+     &       linkrch(MXLK),               ! for reach summary print
+     &       qevp(MXLK),
+     &       jqlmax(MXLK),qlmax(MXLK),
+     &       lkrch(MXLK),                 ! for reach parameter   ! r4
+     &       rvrch(MXTB,3),               ! for reach parameter   ! r4
+     &       ptrch(MXLK),ptrrv(MXLK),ptrdv(MXLK),
+     &       npdd,kpdiv(MXLK),pdivf(MXPS), adivf(MXPS)       ! for planned diversion  3/12/15
+
+      character*8    lkname
+      integer        usn,dsn,convtype,ptrch,ptrrv,ptrdv
+      real           mannn,length
+
+                   ! rvrch(irch,1)   bottom percolation rate            ! r4
+                   ! rvrch(irch,2)   side   percolation rate, not used  ! r4
+                   ! rvrch(irch,3)   TIN first order reaction rate      ! r4
+
+                   ! rxn(ilk)  - positive fraction number is to be multiplied to conc
+                   !           - negative number - absolute value for outflow
+                   !                               fixed conc for Duck pond
+
+
+      common /ndprpt/ndname(0:MXLK),
+     &               nha(MXLK),nodha(MXLK,MXHN),rmult(MXLK,MXHN),
+     &               nincl(MXLK),
+     &               qout(MXLK,0:MXPS),
+     &               cqout(MXLK,4,0:MXPS)
+                           ! 1 TDS conc
+                           ! 2 TIN conc
+                           ! 3 TDS mass = cfs * mg/l
+                           ! 4 TIN mass = cfs * mg/l
+
+      character*8  ndname
+
